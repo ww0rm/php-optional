@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ww0rm
- * Date: 2/23/17
- * Time: 01:02
- */
-
 namespace ww0rm\optional;
 
 
@@ -25,7 +18,7 @@ class Optional
      * @param object $obj
      * @return Optional
      */
-    public static function of(object $obj) : Optional
+    public static function of($obj) : Optional
     {
         return new Optional($obj);
     }
@@ -34,7 +27,7 @@ class Optional
      * Optional constructor.
      * @param object $obj
      */
-    private function __construct(object $obj)
+    private function __construct($obj)
     {
         $this->obj = $obj;
     }
@@ -59,11 +52,11 @@ class Optional
     }
 
     /**
-     * get object or return argument object
+     * get object or return object from argument
      * @param object $obj
-     * @return object
+     * @return Object
      */
-    public function orElse(object $obj) : object
+    public function orElse($obj)
     {
         if ($this->isPresent())
             return $this->obj;
@@ -77,7 +70,7 @@ class Optional
      * @return object
      * @throws \Exception
      */
-    public function orElseThrow(\Exception $exception) : object
+    public function orElseThrow(\Exception $exception)
     {
         if ($this->isPresent())
             return $this->obj;
@@ -89,7 +82,7 @@ class Optional
      * get object
      * @return object
      */
-    public function get() : object
+    public function get()
     {
         return $this->obj;
     }

@@ -22,7 +22,7 @@
   },
   "autoload": {
     "psr-4": {
-      "ww0rm\\Optional\\": "src"
+      "ww0rm\\optional\\": "src"
     }
   }
 }
