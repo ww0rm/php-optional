@@ -1,4 +1,4 @@
-# php-arrays [![Build Status](https://travis-ci.org/ww0rm/php-optional.svg?branch=master)](https://travis-ci.org/ww0rm/php-optional)
+# php-optional [![Build Status](https://travis-ci.org/ww0rm/php-optional.svg?branch=master)](https://travis-ci.org/ww0rm/php-optional)
 Implements Java8 Optional in PHP7
 ##### Required PHP 7+
 
